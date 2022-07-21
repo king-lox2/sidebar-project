@@ -1,0 +1,177 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+  padding:1rem;
+}
+
+
+.logo{
+  font-family: cursive;
+  text-shadow:0.5px 0.8px gray;
+  letter-spacing: 1px;
+  color: #3b82f6;
+}
+.heart{
+  font-size:0.5rem;
+}
+
+.btn{
+  font-size:1rem;
+  background:#3b82f6;
+  border: transparent;
+  color: #fff;
+  border-radius:0.25rem;
+  padding:6px 9px 6px 9px;
+  cursor: pointer;
+}
+
+.sidebar{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow: scroll;
+  overscroll-behavior:contain;
+  background-color:beige;
+  transform: translate(-100%);
+  transition:0.9s linear;
+  
+}
+
+.show-sidebar{
+  transform:translate(0);
+}
+
+
+ul,a {
+ list-style: none;
+ text-decoration:none;
+}
+
+.nav-links{
+  margin-top: 2rem;
+  padding-left: 1rem;
+}
+.nav-links li {
+ line-height:3rem ;
+}
+
+.nav-links a {
+  letter-spacing: 2px;
+  color: gray;
+}
+
+.nav-links a:hover {
+  color:#3b82f6 ;
+}
+
+.register {
+  display: flex;
+  align-items:center;
+}
+
+.register button{
+  margin:1rem 2rem 2rem 0;
+  cursor: pointer;
+  font-family: Monospace;
+  font-size:0.8rem;
+}
+
+.btnn {
+  padding:0.3rem 0.6rem 0.3rem 0.6rem;
+  background-color:#fff;
+  border:1px solid #3b82f6;
+  color:#3b82f6;
+  border-radius:0.17rem;
+  transition:0.5s linear;
+}
+
+.btnn:hover{
+  background-color:#3b82f6;
+  color:#fff;
+}
+
+.social-icons ul{
+ display:flex ;
+align-items: center;
+justify-content: center;
+margin-top: 13rem;
+margin-left:1.5rem;
+}
+
+.social-icons li {
+  margin-right:1.5rem;
+}
+
+.social-icons a {
+  font-size:1.5rem;
+}
+
+.instagram {
+  color: #f97316;
+}
+
+.whatsApp {
+  color:#22c55e;
+}
+
+.facebook {
+  color:#1d4ed8 ;
+}
+
+.linkedin{
+  color:#3b82f6;
+}
+
+.twitter{
+  color:#38bdf8;
+}
+
+@media screen and (min-width: 576px){
+  .social-icons ul {
+    margin-top:2rem;
+    margin-bottom:0.7rem;
+  }
+  
+}
+
+@media screen and (min-width:800px){
+  .logo {
+   font-size: 2.3rem;
+  }
+  .btn{
+    font-size:1.5rem;
+      padding:6px 11px 6px 11px;
+  }
+  
+  .nav-links li {
+    font-size:20px;
+    line-height: 4rem;
+  }
+  .social-icons a {
+    font-size: 2rem ;
+  }
+  
+  .register button{
+    font-size:1rem;
+    margin:2rem 3rem 3rem 0;
+  }
+  
+  .btnn{
+ padding:0.5rem 0.8rem 0.5rem 0.8rem;
+  }
+  
+  .sidebar{
+    width:50%;
+  }
+  
+}
+
